@@ -4,7 +4,7 @@ const { events } = require("./data.json");
 // Serve data
 export default function handler(req, res) {
   if (req.method === "GET") {
-    res.status(200).json({ events });
+    res.status(200).json(events);
   } else {
     // Only allow Get method
     res.setHeader("Allow", [GET]);

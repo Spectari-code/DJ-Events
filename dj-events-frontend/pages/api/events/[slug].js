@@ -9,7 +9,7 @@ export default function handler(req, res) {
 
   if (req.method === "GET") {
     // return single event
-    res.status(200).json({ evt });
+    res.status(200).json(evt);
   } else {
     // Only allow Get method
     res.setHeader("Allow", [GET]);
