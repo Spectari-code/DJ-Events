@@ -5,7 +5,7 @@ const { events } = require("./data.json");
 export default function handler(req, res) {
   // Limit to sepcific event
   // Return an array with a single event by slug
-  const evt = events.filter((ev) => ev.slug === req.query.slug);
+  const evt = events.filter((evt) => evt.slug === req.query.slug);
 
   if (req.method === "GET") {
     // return single event
